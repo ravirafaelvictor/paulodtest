@@ -1,0 +1,60 @@
+﻿
+> nextjs_tailwind_shadcn_ts@0.1.0 build
+> next build && cp -r .next/static .next/standalone/.next/ && cp -r public .next/standalone/
+
+   Ôû▓ Next.js 15.3.5
+
+   Creating an optimized production build ...
+ Ô£ô Compiled successfully in 1000ms
+   Skipping validation of types
+   Skipping linting
+   Collecting page data ...
+   Generating static pages (0/9) ...
+   Generating static pages (2/9) 
+   Generating static pages (4/9) 
+   Generating static pages (6/9) 
+ Ô£ô Generating static pages (9/9)
+   Finalizing page optimization ...
+   Collecting build traces ...
+
+Route (app)                                 Size  First Load JS
+Ôöî Ôùï /                                    31.9 kB         191 kB
+Ôö£ Ôùï /_not-found                            977 B         102 kB
+Ôö£ ãÆ /api                                   139 B         101 kB
+Ôö£ ãÆ /api/generate-image                    139 B         101 kB
+Ôö£ Ôùï /historia                            6.88 kB         162 kB
+Ôö£ Ôùï /politica-de-privacidade               174 B         105 kB
+Ôöö Ôùï /termos-de-uso                         174 B         105 kB
++ First Load JS shared by all             101 kB
+  Ôö£ chunks/4bd1b696-c91a901cbe533159.js  53.2 kB
+  Ôö£ chunks/684-4e7817b6e2e13953.js         46 kB
+  Ôöö other shared chunks (total)             2 kB
+
+
+Ôùï  (Static)   prerendered as static content
+ãÆ  (Dynamic)  server-rendered on demand
+
+node.exe : 'cp' não é 
+reconhecido como um 
+comando interno
+No linha:1 caractere:1
++ & "C:\Program 
+Files\nodejs/node.exe" 
+"C:\Program 
+Files\nodejs/node_mo ...
++ ~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo      
+        : NotSpecified  
+  : ('cp' não é reco.   
+ ..comando interno:S    
+tring) [], RemoteEx    
+ception
+    + FullyQualifiedErr 
+   orId : NativeComman  
+  dError
+ 
+ou externo, um programa 
+operável ou um arquivo 
+em lotes.
