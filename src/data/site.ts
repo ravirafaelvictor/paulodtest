@@ -35,40 +35,56 @@ export const siteConfig = {
             badge: "Individual",
             title: "Atendimento Individual",
             subtitle: "Clareza comportamental para decisões e evolução consistente.",
-            features: ["Mapeamento comportamental (DISC/CIS)", "Devolutiva individual e plano de ação", "Mentoria e acompanhamento (presencial/online)"],
+            features: [
+                "Mapeamento comportamental (DISC/CIS)",
+                "Devolutiva individual e plano de ação",
+                "Mentoria e acompanhamento (presencial/online)",
+                "Coach e Mentoria"
+            ],
             icon: Users
         },
         {
             badge: "Corporativo",
             title: "Empresas e Equipes",
             subtitle: "Performance, cultura e comunicação aplicada ao dia a dia.",
-            features: ["Palestras e treinamentos in-company", "Desenvolvimento de equipes e lideranças", "Diagnóstico e plano por contexto"],
+            features: [
+                "Palestras e treinamentos in-company",
+                "Desenvolvimento de equipes e lideranças",
+                "Diagnóstico e plano por contexto",
+                "DNA Organizacional",
+                "Arquitetura de Cargo"
+            ],
             icon: TrendingUp
         },
         {
             badge: "Educacional",
             title: "Escolas e Educação",
             subtitle: "Educação emocional e comunicação para ambientes saudáveis.",
-            features: ["Oficinas e palestras educativas", "Formação de professores", "Projetos e encontros temáticos"],
+            features: [
+                "Oficina das Emoções",
+                "Palestras Educativas",
+                "Formação de Professores",
+                "Projetos e Encontros Temáticos"
+            ],
             icon: BookOpen
         }
     ],
     clientId: "clients-carousel",
     clients: [
-        { name: "Empresa 1", logo: "https://i.imgur.com/Jmcqvyt.png" },
-        { name: "Empresa 2", logo: "https://i.imgur.com/tlYlNq4.png" },
-        { name: "Empresa 3", logo: "https://i.imgur.com/8aS3GMA.png" },
-        { name: "Empresa 4", logo: "https://i.imgur.com/jgmjeB5.png" },
-        { name: "Empresa 5", logo: "https://i.imgur.com/jG3nC2Y.png" },
-        { name: "Empresa 6", logo: "https://i.imgur.com/TG5PISn.png" },
+        { name: "Obras Sociais Irmã Dulce", logo: "https://i.imgur.com/BttW9TQ.jpeg" },
+        { name: "CAM", logo: "https://i.imgur.com/jG3nC2Y.png" },
+        { name: "UniFTC", logo: "https://i.imgur.com/Jmcqvyt.png" },
+        { name: "Althomaz", logo: "https://i.imgur.com/tlYlNq4.png" },
+        { name: "São Salvador", logo: "https://i.imgur.com/8aS3GMA.png" },
+        { name: "UNIAPVS", logo: "https://i.imgur.com/jgmjeB5.png" },
         { name: "Empresa 7", logo: "https://i.imgur.com/b9MO3mb.png" },
-        { name: "Empresa 8", logo: "https://i.imgur.com/BttW9TQ.jpeg" },
         { name: "Empresa 9", logo: "https://i.imgur.com/oV4yWos.png" },
         { name: "Empresa 10", logo: "https://i.imgur.com/pJO323i.png" },
         { name: "Empresa 11", logo: "https://i.imgur.com/cJ9oSyN.png" },
         { name: "Empresa 12", logo: "https://i.imgur.com/fffSAvF.png" },
-        { name: "Empresa 13", logo: "https://i.imgur.com/xkb0D4b.png" },
-        { name: "Empresa 14", logo: "https://i.imgur.com/sS5oZqH.png" },
+        { name: "Governo do Estado", logo: "https://i.imgur.com/TG5PISn.png" },
+        { name: "Prefeitura de Salvador", logo: "https://i.imgur.com/xkb0D4b.png" },
+        { name: "PM Bahia", logo: "https://i.imgur.com/sS5oZqH.png" },
     ],
     services: [
         {

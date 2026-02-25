@@ -42,42 +42,49 @@ export function TestimonialsSection() {
                     }}
                     className="w-full"
                 >
-                    <CarouselContent>
+                    <CarouselContent className="-ml-4">
                         {videoTestimonials.map((video, index) => (
-                            <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
+                            <CarouselItem key={index} className="pl-4 basis-full sm:basis-1/2 lg:basis-1/3">
                                 <div className="p-1">
                                     <Dialog onOpenChange={(open) => !open && setActiveVideo(null)}>
                                         <DialogTrigger asChild>
                                             <div
-                                                className="relative aspect-[9/16] rounded-xl overflow-hidden cursor-pointer group bg-slate-800 border-slate-700 border"
+                                                className="relative aspect-[9/16] rounded-2xl overflow-hidden cursor-pointer group bg-slate-800 border-slate-700/50 border shadow-2xl transition-all duration-500 hover:scale-[1.02] active:scale-[0.98]"
                                                 onClick={() => setActiveVideo(video.videoUrl)}
                                             >
                                                 {/* Thumbnail / Poster */}
-                                                <div className="absolute inset-0 bg-slate-900">
+                                                <div className="absolute inset-0 bg-slate-950">
                                                     <Image
                                                         src={video.poster}
                                                         alt={`Depoimento ${index + 1}`}
                                                         fill
-                                                        className="object-cover opacity-80 group-hover:opacity-60 transition-opacity"
+                                                        className="object-cover opacity-90 group-hover:opacity-70 transition-all duration-700"
+                                                        sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                                                     />
+                                                    {/* Gradient Overlay */}
+                                                    <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent opacity-60" />
                                                 </div>
-
+                                                [...]
                                                 {/* Play Button Overlay */}
                                                 <div className="absolute inset-0 flex items-center justify-center">
-                                                    <div className="w-14 h-14 rounded-full bg-white/10 backdrop-blur-md flex items-center justify-center group-hover:scale-110 transition-transform border border-white/20 shadow-xl">
-                                                        <Play className="w-6 h-6 text-white fill-white ml-1" />
+                                                    <div className="w-16 h-16 rounded-full bg-primary/20 backdrop-blur-md flex items-center justify-center group-hover:scale-110 transition-all duration-500 border border-primary/30 shadow-[0_0_20px_rgba(59,130,246,0.3)]">
+                                                        <div className="w-12 h-12 rounded-full bg-primary flex items-center justify-center shadow-lg">
+                                                            <Play className="w-5 h-5 text-white fill-white ml-1" />
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </DialogTrigger>
-                                        <DialogContent className="bg-slate-950 border-slate-800 text-white max-w-4xl p-0 overflow-hidden w-full aspect-video md:aspect-auto md:h-[80vh] flex items-center justify-center">
+                                        [...]
+                                        <DialogContent className="bg-slate-950/95 backdrop-blur-xl border-slate-800 text-white max-w-4xl p-0 overflow-hidden w-[calc(100%-2rem)] md:w-full aspect-[9/16] md:h-[85vh] flex items-center justify-center">
                                             <DialogTitle className="sr-only">Assista ao depoimento em vídeo</DialogTitle>
                                             {activeVideo === video.videoUrl && (
                                                 <video
                                                     src={video.videoUrl}
                                                     controls
                                                     autoPlay
-                                                    className="w-full h-full max-h-[80vh] object-contain bg-black"
+                                                    playsInline
+                                                    className="w-full h-full object-contain bg-black"
                                                 >
                                                     Seu navegador não suporta vídeos.
                                                 </video>
@@ -88,8 +95,10 @@ export function TestimonialsSection() {
                             </CarouselItem>
                         ))}
                     </CarouselContent>
-                    <CarouselPrevious className="bg-slate-800 border-slate-700 text-white hover:bg-slate-700 hover:text-white" />
-                    <CarouselNext className="bg-slate-800 border-slate-700 text-white hover:bg-slate-700 hover:text-white" />
+                    <div className="hidden md:block">
+                        <CarouselPrevious className="-left-12 h-12 w-12 bg-slate-900/50 border-slate-800 text-white hover:bg-primary hover:border-primary transition-all duration-300" />
+                        <CarouselNext className="-right-12 h-12 w-12 bg-slate-900/50 border-slate-800 text-white hover:bg-primary hover:border-primary transition-all duration-300" />
+                    </div>
                 </Carousel>
             </div>
 
