@@ -64,7 +64,6 @@ export function TestimonialsSection() {
                                                     {/* Gradient Overlay */}
                                                     <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent opacity-60" />
                                                 </div>
-                                                [...]
                                                 {/* Play Button Overlay */}
                                                 <div className="absolute inset-0 flex items-center justify-center">
                                                     <div className="w-16 h-16 rounded-full bg-primary/20 backdrop-blur-md flex items-center justify-center group-hover:scale-110 transition-all duration-500 border border-primary/30 shadow-[0_0_20px_rgba(59,130,246,0.3)]">
@@ -75,7 +74,6 @@ export function TestimonialsSection() {
                                                 </div>
                                             </div>
                                         </DialogTrigger>
-                                        [...]
                                         <DialogContent className="bg-slate-950/95 backdrop-blur-xl border-slate-800 text-white max-w-4xl p-0 overflow-hidden w-[calc(100%-2rem)] md:w-full aspect-[9/16] md:h-[85vh] flex items-center justify-center">
                                             <DialogTitle className="sr-only">Assista ao depoimento em vídeo</DialogTitle>
                                             {activeVideo === video.videoUrl && (
