@@ -58,6 +58,15 @@ export default function HistoriaPage() {
                     <p className="italic border-l-2 border-slate-700 pl-4">
                         Sou, acima de tudo, resultado daquilo que ensino. Tudo o que compartilho foi vivido, testado e transformado em aprendizado. Se você acredita que o desenvolvimento humano começa pelo comportamento, pela escuta e pela conexão, será um prazer caminhar junto nessa jornada de transformação.
                     </p>
+
+                    <div className="mt-12 pt-8 border-t border-slate-800/50">
+                        <Button variant="outline" className="border-slate-800 text-slate-400 hover:text-white hover:border-primary/50 bg-slate-900/30" asChild>
+                            <a href="https://lattes.cnpq.br/4527428751064384" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
+                                <Zap className="w-4 h-4 text-primary" />
+                                Currículo Acadêmico (Plataforma Lattes)
+                            </a>
+                        </Button>
+                    </div>
                 </article>
             </Section>
 
